@@ -18,6 +18,15 @@
     padding: 10px;
     background:green;
     color:#fff;
+    z-index: 3000;
+}
+.divMessageOnePost{
+    margin-top: 100px;
+    margin-bottom: -100px;
+    padding: 10px;
+    background:green;
+    color:#fff;
+    z-index: 3000;
 }
 #imgCardPost{
     height: 150px;
@@ -32,8 +41,9 @@
     color: white;
     font-weight: bold;
     padding: 2%;
-    z-index: 1500;
+    z-index: 1000;
 }
+
 .formPost{
     margin: 5%;
 }
@@ -61,11 +71,11 @@
 
 
 .ingreser form{
-    width: 400px;
-    margin-top: 100px;
-    height: 600px;
+    margin: 10%;
     background-color: white; 
     padding: 50px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px 10px #aaa;
 }
 .ingreser form button{
     margin-top:20px;
@@ -143,8 +153,15 @@
 #postIndex{
     position: relative;
     z-index: 1000;
-    margin: 5%;
+    margin: 10%;
 }
+.truncateText {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    width: 350px;
+  }
 
 
 /* carousel */
@@ -158,9 +175,13 @@
     text-align: center;
   }
   
-  /* to remove slide effect  css */
-   .animated  {
-        -webkit-animation-duration : 0 ms  !important;
+  /* to remove s.truncateText {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    width: 350px;
+  }animation-duration : 0 ms  !important;
         animation-duration : 0 ms  !important;
         -webkit-animation-fill-mode : both  !important;
         animation-fill-mode : both  !important;
@@ -196,19 +217,43 @@
     #imgCardPost{
         margin-left: 27vw;
     }
+    #imgOnePost{
+        width: 220px;
+        height: 180px;
+        margin-left: 15vw;
+    }
 
 }
-@media only screen and (max-width: 770px) and (min-width: 481px) {
+@media only screen and (max-width: 549px) and (min-width: 481px) {
     #postIndex{
         margin-top: 20%;
     }
     #imgCardPost{
     margin-left: 30vw;
+    }
+    #imgOnePost{
+        width: 250px;
+        height: 220px;
+        margin-left: 20vw;
+
+    }
 }
+@media only screen and (max-width: 770px) and (min-width: 550px) {
+    #imgOnePost{
+        width: 250px;
+        height: 220px;
+        margin-left: 25vw;
+
+    }
 }
 @media only screen and (min-width: 771px) {
     #postIndex{
         margin-top: 10%;
+    }
+    #imgOnePost{
+        width: 350px;
+        height: 320px;
+        margin-left: 30vw;
     }
 }
 
@@ -221,3 +266,10 @@
         margin-top: 120px;
     }
 }
+.truncateText {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    width: 350px;
+  }

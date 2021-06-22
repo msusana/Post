@@ -18,6 +18,7 @@
     border-radius: 4px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.3);
     overflow:auto;
+    z-index: -1000;
   }
   #modalSearch-close-btn {
     position: absolute;

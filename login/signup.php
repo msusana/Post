@@ -17,26 +17,21 @@ if(!empty($_GET['success'])){
 }
 ?>
     
-<div class = "flex-container">
-    <div class='hunt'>
-    <h2>Product hunt</h2>
-    <p> Avec Product-hunt, explore de nouveaux horizons, découvre et teste de nouveaux logiciels et applications,
-        notes les et partage les avec tes amis! </p>
-        <img src="/images/hunt.gif" alt="">
-    </div>
+<div class = "d-flex justify-content-center">
         <div class='ingreser'> 
             <form action='/treatment/user.php' id='form' method="POST">
     
                     <label class='nickname' for='nickname'>Pseudo</label>
                     <input type='text' id='nickname' class='form-control' name='nickname' required>
                     
-                    <label class='password' for='password' >Nouveau mot de passe</label>
+                    <label class='password' for='password' >Password</label>
                     <input type='password' id='password' class='form-control' name='password' required>
                     
-                    <label class='password' for='password2' >Confirmation du mot de passe</label>
+                    <label class='password' for='password2' >Confirm Password</label>
                     <input type='password' id='password2' class='form-control' name='password2' required>
 
-                    <button class='btn btn-danger' id='login'>S'inscrire </button> 
+                    <button class='btn btn-success mb-3' id='login'>Create my account</button> </br>
+                    <a href="/login/login.php">Already have a Connection Account?</a>
             </form> 
         </div> 
 </div>

@@ -17,6 +17,8 @@ document.addEventListener('DOMContentLoaded',()=>{
 let postIndex = document.querySelector("#postIndex")  
 let divPost = document.querySelector("#post-list");
 let inputSearch = document.querySelector(".search-post");
+let btnFormPost = document.querySelector(".btnFormPost");
+let divmodalSearch = document.querySelector(".modalSearch");
 
 function searchPost(results){
 
@@ -36,6 +38,9 @@ function searchPost(results){
                 console.log(result)
                 postIndex.style.position = 'relative';
                 postIndex.style.zIndex= -1000;
+                btnFormPost.style.position = 'relative';
+                btnFormPost.style.zIndex= -1000;
+                modalSearch.style.zIndex= 1000;
                 document.getElementById('overlayModalSearch').style.opacity= '1';
                 document.getElementById('modalSearch').style.opacity= '1';
                 
@@ -67,6 +72,8 @@ const buttonCloseSearch = document.getElementById('closeBtnModalSearch')
     document.getElementById('modalSearch').style.opacity= 0;
     postIndex.style.position = 'relative';
     postIndex.style.zIndex= 1000;
+    btnFormPost.style.zIndex= 1000;
+    modalSearch.style.zIndex= -1000;
     divPost.innerHTML = ""
     inputSearch.value =""
   });
@@ -79,3 +86,5 @@ const buttonCloseSearch = document.getElementById('closeBtnModalSearch')
         $('.modalSearch').css('height', sH + 'px');
     });
 }
+
+console.log('test')

@@ -20,9 +20,9 @@ foreach($allPhotos as $image){ ?>
           <div class="col-md-7 col-sm-12 align-self-center box-post" data-popup-ref= <?php if($_SESSION): echo '"monPopup"'; endif?> id='<?= $post["post"]->getId()?>'>
             <div class="card-body">
               <h5 class="card-title">"<?=$post['post']->getName_post()?>"</h5>
-              <p class="card-text"><?=$post['post']->getDescription()?> </p>
+              <p class="card-text truncateText"><?=$post['post']->getDescription()?> </p>
               <p class="card-text"> <?=$post['post']->getCreated()?> </p>
-              <p class="card-text"><?=$post['post']->getLink()?></p>
+              <a href="<?= $post['post']->getLink() ?>" style= 'color : blue; font-size : 20px;'>Link</a>
             </div>
           </div>    
           
@@ -46,8 +46,9 @@ foreach($allPhotos as $image){ ?>
             <div class="col-md-7 col-sm-12 align-self-center box-post" onClick="alert('You must be connected to see this post');" >
             <div class="card-body">
               <h5 class="card-title">"<?=$post['post']->getName_post()?>"</h5>
-              <p class="card-text"><?=$post['post']->getDescription()?> </p>
-              <p class="card-text"> <?=$post['post']->getCreated()?>  <?=$post['post']->getLink()?></p>
+              <p class="card-text truncateText"><?=$post['post']->getDescription()?> </p>
+              <p class="card-text"> <?=$post['post']->getCreated()?></p>
+              <a href="<?= $post['post']->getLink() ?>" style= 'color : blue; font-size : 30px;'>Link</a>
             </div>
           </div>
 

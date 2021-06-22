@@ -28,7 +28,8 @@ if (isset($_POST['id_post'])) :
                         <h1><?= $post->getName_post() ?></h1>
                     </div>
                     <div class="col-12">
-                        <p><?= $post->getLink() ?> <?= $post->getCreated() ?></p>
+                        <p><?= $post->getCreated() ?></p>
+                        <a href="<?= $post->getLink() ?>" style= 'color : blue; font-size : 30px;'>Link</a>
                     </div>
 
 

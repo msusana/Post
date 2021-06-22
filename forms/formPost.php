@@ -5,14 +5,14 @@
       <div class="col-4">
         <input type="hidden" name="id_user" value='<?= $user->getId() ?>'>
         <label for="pseudo" class="form-label"></label>
-        <input type="text" class="form-control" id="name" placeholder="name_post" name="name_post">
+        <input type="text" class="form-control" id="name" placeholder="name_post" name="name_post" maxlength="250">
         <label for="link" class="form-label">Link</label>
-        <input type="text" class="form-control" id="link" name="link" placeholder="Exemple : www.site.com">
+        <input type="text" class="form-control" id="link" name="link" placeholder="Exemple : www.site.com"maxlength="500">
       </div>
      
       <div class="col-7">
         <label for="description">Example textarea</label>
-        <textarea class="form-control" id="description" name='description' rows="3"></textarea>
+        <textarea class="form-control" id="description" name='description' rows="3" maxlength="5000"></textarea>
       </div>
       <div class="col-10 m-1">
       <label for="photo_link1">Choose file to upload</label>

@@ -43,8 +43,8 @@ if($_GET['id']){
                     $allPhotos = $ImageManager->getPhotoByIdPost($post->getId() );
                     $isFirst = true; 
                                 foreach($allPhotos as $image){ ?> 
-                                <div class="carousel-item <?php if($isFirst){ echo 'active';}else{ echo'';} ?>" >
-                                    <img src="<?= $image->getPhoto_Link() ?>" class="d-block w-100" alt="...">
+                                <div class="carousel-item bg-dark <?php if($isFirst){ echo 'active';}else{ echo'';} ?>" >
+                                    <img src="<?= $image->getPhoto_Link() ?>" class="d-block" id='imgOnePost' alt="...">
                                     </div>
                                 <?php $isFirst = false; ?>  
                                 <?php } ?>
@@ -65,44 +65,6 @@ if($_GET['id']){
                     <p><?= $post->getDescription() ?></p>
                 </div>
             </div>
-       
-
-    
-
-    <div id='refresh'>
-        <h5>Espace commentaires</h5><br>
-        <div class="commentaire-list">
-            <?php
-            
-            
-            foreach ($reviews as $commentaire) : ?>
-                <div class="commentaires">
-                    <?php
-                    $userReview = $UserManager->getUserById($commentaire->getId_user());
-                    
-                    ?>
-                    <p class="nickname"> <b> <?= $userReview->getNickname() ?> </b></br><b> Post :</b> <?= $commentaire->getCreated()?> </b>a = <?= $commentaire->getTime()?> <b></p>
-                    <p class="commentaire"> <?= $commentaire->getText_review()?></p>
-                </div>
-            <?php endforeach; ?>
-        </div>
-        <div id="like">
-            <div class='nblike'>
-                <p class='ion'>
-                    <ion-icon name="caret-up-outline"></ion-icon>
-                </p></br>
-                <?php  $countLikes = $LikeManager->getCountLike($post->getId()); 
-                      echo $countLikes['nb_likes']; ?>
-            </div>
-        </div>
-
-        <input id="id_post" value="<?= $_GET['id']?>" type="hidden">
-        <input id="id_user" value="<?=$idUser ?>" type="hidden">
-        <textarea name="commentaires" id="commentaire" placeholder="votre commentaire..."> </textarea>
-        <button class="btn btn-primary" id='envoyer' onclick="send();">Envoyer</button>
-
-    </div>
-   
 
 </div>
         
