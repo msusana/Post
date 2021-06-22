@@ -20,8 +20,8 @@ $nbLikes = $LikeManager->getCountLike($_POST['id_post']);
 ?>
 
 <?php if (!$verificationLike){ ?>
-    <div class="uplike ups" ><ion-icon name="caret-up-outline"></ion-icon> <p><?=$nbLikes['nb_likes'] ?></p></div>
+    <div class="uplike ups" ><i class='far fa-heart' style='font-size:20px;'></i> <p><?=$nbLikes['nb_likes'] ?></p></div>  
 <?php }else{ ?>
-    <div class="uplike liked"> <ion-icon  name="caret-up-outline"></ion-icon> <p><?=$nbLikes['nb_likes'] ?></p></div>
+    <div class="uplike liked"> <i class='fas fa-heart' style='font-size:20px;color:red'></i> <p><?=$nbLikes['nb_likes'] ?></p></div>
 <?php }} ?>
 

@@ -11,7 +11,7 @@ if (isset($_POST['id_post'])) :
     foreach($reviews as $commentaire) :
     $userReview = $UserManager->getUserById($commentaire->getId_user()); ?>
         <div class="commentaires" >
-        <p class="nickname"> <b> <?= $userReview->getNickname() ?> </b></br><b> Post :</b> <?= $commentaire->getCreated()?> </b>a = <?= $commentaire->getTime()?> <b></p>
+        <p class="nickname"> <b> <?= $userReview->getNickname() ?> </b></br><b> Post :</b> <?= $commentaire->getCreated()?> </br><?= $commentaire->getTime()?> </p>
         <p class="commentaire"> <?= $commentaire->getText_review()?></p>
         </div>
 <?php  endforeach;?><?php  endif;?>

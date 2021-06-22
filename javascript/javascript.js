@@ -66,12 +66,45 @@ cards.forEach(card => {
         })
     })
 });
+popupClass = document.querySelector('.popupClass')
+popupContentClass = document.querySelector('.popupContentClass')
+
+function onPopupClose() {
+    setTimeout(()=>{
+        popupClass.classList.remove('active');
+    }, 10);
+    popupContentClass.classList.remove('active');
+
+}  
 
 $('.formPost').hide();
 $('.btnFormPost').click(function(){
     $('.formPost').toggle(1000);
 })
-console.log('hola')
+
+$('.photoLink3').hide();
+$('#photoLink2').hide();
+$('.photoLink2').click(function(){
+    $('#photoLink2').show(1000);
+    $('.photoLink3').show(1000);
+})
+
+$('#photoLink3').hide();
+$('.photoLink3').click(function(){
+    $('#photoLink3').show(1000);
+    
+})
+
+$('.commentaire-list').hide();
+$( ".buttonAccesReviews" ).click(function() {
+    console.log('enter')
+    let id = this.getAttribute('id')
+    $(`#commentaire-list${id}`).toggle(1000);
+
+  });
+
+
+
 
 // carousel 
 

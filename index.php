@@ -5,7 +5,7 @@ include __DIR__.'/structure-page/navBar.php';
 ?>
 <body>
 <?php if (!empty($_GET["message"])) : ?>
-        <div style="padding: 10px;background:gray;color:#fff;">
+        <div class='divMessage'>
             <?=$_GET["message"]?>
         </div>
 <?php endif;
@@ -24,9 +24,9 @@ $user = new User($newUser);
 $idUser = $user->getId();
 }
 ?>
-        <div id="postIndex">
+        
         <?php include 'recuperation-donnees/affichage.php'; ?>
-        </div>
+        
     
 </body>
 

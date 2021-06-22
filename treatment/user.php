@@ -16,7 +16,7 @@ else {
   
     if ($verificationPassword) {
         $_SESSION['nickname'] = $_POST['nickname'];
-        header('location:../index2.php?message=Salut '.$_POST['nickname'].' You are connected !');
+        header('location:../index.php?message=Salut '.$_POST['nickname'].' You are connected !');
         
     } else {
         header("location:../login/login.php?error= The password or the nickname is incorrect!");
@@ -44,7 +44,7 @@ else if(isset($_POST['nickname']) && isset($_POST['password'])&&isset($_POST['pa
 
             if ($creationUser) {
                 $_SESSION['nickname'] = $_POST['nickname'];
-                header('location:../index2.php?message= Hello '.$_POST['nickname'].' You are connected !');
+                header('location:../index.php?message= Hello '.$_POST['nickname'].' You are connected !');
 
             } else {
                 header("location:../login/login.php?error= Something went wrong please try again");

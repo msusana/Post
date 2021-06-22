@@ -14,22 +14,24 @@
         <label for="description">Example textarea</label>
         <textarea class="form-control" id="description" name='description' rows="3"></textarea>
       </div>
-      <div class="col-10">
+      <div class="col-10 m-1">
       <label for="photo_link1">Choose file to upload</label>
         <input type="file" id="photo_link1" name="photo_link1"
           accept=".jpg, .jpeg, .png">
-      </div>
-      <div class="col-10">
+      </div> 
+      <button type="button" class="btn btn-secondary photoLink2">Add another image </button>
+      <div class="col-10 m-1" id='photoLink2'>
       <label for="photo_link2">Choose file to upload</label>
         <input type="file" id="photo_link2" name="photo_link2"
           accept=".jpg, .jpeg, .png">
       </div>
-      <div class="col-10">
+      <button type="button" class="btn btn-secondary photoLink3">Add another image </button>
+      <div class="col-10 m-1" id='photoLink3'>
       <label for="photo_link3">Choose file to upload</label>
         <input type="file" id="photo_link3" name="photo_link3"
           accept=".jpg, .jpeg, .png">
       </div>
-      <div class="col-1">
+      <div class="col col-sm-12 col-md-2">
         <button type="submit" class="btn btn-primary" >Submit</button>
       </div>
 
