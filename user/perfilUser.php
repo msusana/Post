@@ -50,7 +50,7 @@ foreach($allPost as $post):
                     <h1><?= $post->getName_post() ?></h1>
                 </div>
                 <div class="col-12">
-                    <a href="<?= $post->getLink() ?>" style= 'color : blue; font-size : 30px;'>Link</a>
+                    <a href="<?= $post->getLink() ?>" style= 'color : blue; font-size : 30px;' target="_blank">Link</a>
                     <p class="titles"><?= $post->getCreated() ?></p>
                 </div>
                 <div class="col-12"> 

@@ -22,7 +22,7 @@ foreach($allPhotos as $image){ ?>
               <h5 class="card-title">"<?=$post['post']->getName_post()?>"</h5>
               <p class="card-text truncateText"><?=$post['post']->getDescription()?> </p>
               <p class="card-text"> <?=$post['post']->getCreated()?> </p>
-              <a href="<?= $post['post']->getLink() ?>" style= 'color : blue; font-size : 20px;'>Link</a>
+              <a href="<?= $post['post']->getLink() ?>" target="_blank" style= 'color : blue; font-size : 20px;'>Link</a>
             </div>
           </div>    
           
@@ -48,7 +48,7 @@ foreach($allPhotos as $image){ ?>
               <h5 class="card-title">"<?=$post['post']->getName_post()?>"</h5>
               <p class="card-text truncateText"><?=$post['post']->getDescription()?> </p>
               <p class="card-text"> <?=$post['post']->getCreated()?></p>
-              <a href="<?= $post['post']->getLink() ?>" style= 'color : blue; font-size : 30px;'>Link</a>
+              <a href="<?= $post['post']->getLink() ?>" target="_blank" style= 'color : blue; font-size : 30px;'>Link</a>
             </div>
           </div>
 

@@ -29,7 +29,7 @@ if (isset($_POST['id_post'])) :
                     </div>
                     <div class="col-12">
                         <p><?= $post->getCreated() ?></p>
-                        <a href="<?= $post->getLink() ?>" style= 'color : blue; font-size : 30px;'>Link</a>
+                        <a href="<?= $post->getLink() ?>" target="_blank" style= 'color : blue; font-size : 30px;'>Link</a>
                     </div>
 
 
