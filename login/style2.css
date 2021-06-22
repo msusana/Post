@@ -1,0 +1,40 @@
+*{
+   background-color: white;
+   text-align: center;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.hunt{
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.hunt img{
+width: 600px;
+}
+
+.ingreser form{
+    width: 450px;
+   
+    margin-top: 150px;
+    margin-left: 100px;
+    margin-right: 50px;
+    padding: 50px;   
+    border-radius: 5px;
+    height: 320px;
+    box-shadow: 10px 10px 10px 10px #aaa;
+}
+.ingreser form button{
+    margin-top:20px;
+}
+.ingreser input{
+    margin-bottom:5px;
+}
+.presentation{
+    width: 200px;
+    margin: 100px 300px;
+    
+}

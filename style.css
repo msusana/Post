@@ -1,0 +1,366 @@
+.navBar{
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    top: 0;
+}
+.iconNavBar{
+    position: absolute;
+}
+.navForm{
+    margin: -1%;
+}
+.signup {
+
+    margin-top: 150px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: solid 1px white;
+    background-color: white;
+    border-radius: 5px;
+    height: 320px;
+    box-shadow: 10px 10px 10px 10px #aaa;
+}
+
+
+.ingreser form{
+    width: 400px;
+    margin-top: 100px;
+    height: 600px;
+    background-color: white; 
+    padding: 50px;
+}
+.ingreser form button{
+    margin-top:20px;
+    
+}
+.ingreser input{
+    margin-bottom:20px;
+}
+.presentation{
+    width: 200px;
+    margin: 100px 300px;
+    
+}
+.entrada{
+   background-image: url(images/hunt.gif); 
+}
+
+
+
+.card-img{
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+}
+.col-md-3 .up {
+
+    border-radius: 5px;
+    border: 1px solid grey;
+    width: 70px;
+    height: 75px;
+    background-color: white;
+}
+
+.up {
+    text-align: center;
+    padding-top: 10px;
+}
+.ups {
+    text-align: center;
+    padding-top: 10px;
+}
+.liked {
+    text-align: center;
+    padding-top: 10px; 
+    color: rgb(231, 68, 9);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.37);
+    z-index: 1000;
+}
+
+.popup.active{
+    display: inline-block;
+}
+
+.popup-content{
+    position: fixed;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+    height: auto;
+    min-width: auto;
+    width: auto;
+    border: 1px solid rgb(22, 21, 21);
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    overflow-y: scroll;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.popup-content.active {
+
+    opacity: 1;
+    top: 10%;
+    width: 80%;
+    height: auto;
+    bottom: 10%;
+    padding: 61px;
+    background-color: whitesmoke;
+}
+
+.popup-header {
+    color: black;
+}
+
+.popup-body{
+    height: auto;
+    padding: 2%;
+    background-color: white;
+}
+
+.popup-footer{
+
+    height: auto;
+    padding: 2%;
+    background-color: whitesmoke;
+}
+textarea{ 
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.commentaires {
+    background-color: rgb(227, 226, 235); 
+    border-radius: 10px;
+    margin: 10px;
+    padding: 3px;
+}
+
+.nblike{
+
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;
+    margin: 5px;
+
+} 
+
+.produit{
+    border-radius: 15px;
+    padding: 1%;
+    }
+.produit a{
+        color: black;
+        text-decoration: none;
+        }  
+
+.produit:hover {
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px 10px #aaa;
+
+}
+.imgPerfil{
+    height: 300px;
+    width: 300px;
+}
+
+.btnClick:active {
+    font-size: 30px;
+   
+}
+.images{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 20px;
+}
+
+.images img{
+    margin: 20px;
+}
+.img1:hover{
+    transform:scale(1.65);
+}
+.img2:hover{
+    transform:scale(1.65);
+}
+.img3:hover{
+    transform:scale(1.65);
+}
+@media (max-width: 800px) {
+    .images {
+      flex-direction: column;
+      justify-content: center;
+      width: 150px;
+      margin-left:15px ;
+    }
+    .box-product{
+    text-align: center;
+    }
+    .img-logo{
+    margin: 10px 60px;
+    }
+    
+    .card-img-top {
+        width: 30px;
+        border-top-left-radius: calc(.25rem - 1px);
+        border-top-right-radius: calc(.25rem - 1px);
+    }
+    .search{
+        background-color: beige;
+        width: 100px;
+    }
+    .title{
+        font-size: 15px;
+        font-weight: bolder;
+    }
+   
+  }
+  .selection{
+    background-color:rgb(214, 231, 236);;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 800px){
+    .img-logo{
+        margin: 10px 350px;
+    } 
+    .images{
+        width: 250px;
+        
+    }
+   
+    .card-img-top {
+        width: 50px;
+        border-top-left-radius: calc(.25rem - 1px);
+        border-top-right-radius: calc(.25rem - 1px);
+    }
+    .search{
+        background-color: beige;
+        width: 220px;
+    }
+    .title{
+        font-size: 15px;
+        font-weight: bolder;
+    }
+ 
+    .selection{
+        background-color: rgb(214, 231, 236);;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+  }
+
+
+#product{
+    text-align: center;
+}
+.card-img-top {
+    width: 50px;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+}
+.search{
+    background-color: beige;
+    width: 220px;
+}
+.title{
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+
+.selection button {
+    background-color: rgb(214, 231, 236);
+    border: 1px solid rgb(214, 231, 236);
+    color: rgb(70, 61, 61);
+}
+.ion{
+    font-size: 15px;
+}
+.modals{
+        background-color: #aaa;
+        width: 700px;
+        text-align: center;
+        font-size: 20px;
+        border-radius: 15px;
+        padding: 10px;
+    
+}
+.modals:hover {
+    width: 50vw;
+ box-shadow: 10px 10px 10px 10px #aaa;
+
+}
+.titles{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.hunt{
+    width: 350px;
+    height: 300px;
+}
+
+/* carousel */
+#owl-demo .item{
+    padding: 30px 0px;
+    margin: 10px;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+  }
+  
+  /* to remove slide effect  css */
+   .animated  {
+        -webkit-animation-duration : 0 ms  !important;
+        animation-duration : 0 ms  !important;
+        -webkit-animation-fill-mode : both  !important;
+        animation-fill-mode : both  !important;
+      }  
+      
+      
+      .fadeOut  {
+        -webkit-animation-name : fadeOut  ;
+        animation-name : fadeOut  ;
+      }  
+      @-webkit-keyframes  fadeOut  {
+        0% {
+          opacity : 0   ;
+        }  
+        100% {
+          opacity : 0   ;
+        }  
+      }
+      @keyframes  fadeOut  {
+        0% {
+          opacity : 0   ;
+        }  
+        100% {
+          opacity : 0   ;
+        }  
+      }
+
+@media only screen and (max-width: 760px){
+    .navBtn{
+        margin-bottom: 3%;
+    }
+}
